@@ -44,8 +44,10 @@ def ask_question(lvl):
     global q
     q = questionsdb.get_question(lvl, qnum)
     to_return += q[0]
-    to_return += "\n A. " + q[1] + "\t\t B. " + q[2]
-    to_return += "\n C. " + q[3] + "\t\t D. " + q[4]
+    to_return += "\n A. " + q[1]
+    to_return += "\n B. " + q[2]
+    to_return += "\n C. " + q[3]
+    to_return += "\n D. " + q[4]
 
     global correct_answer
     correct_answer = q[5]
